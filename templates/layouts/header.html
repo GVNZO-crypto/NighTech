@@ -1,0 +1,46 @@
+<!-- Навигационное меню -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+    <div class="container">
+        <!-- Бренд-логотип и кнопка для мобильных устройств -->
+        <a class="navbar-brand" href="{% url 'main' %}" title="Нажмите, чтобы вернуться на главную страницу">
+            NighTech Club
+        </a>        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Навигационное меню -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <!-- Пункты меню -->
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#home" aria-selected="true" role="tab">Расписание</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#profile" aria-selected="false" role="tab">Галерея</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Координаты для Общения">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Роскошное Пространство для Вашего Вечера">Бронирование столов</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Тайны о которых молчат">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Созвездие Специальных Предложений">Партнеры</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Будущее в нас">Магазин</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" title="Истории Ночных Приключений">Блог</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Ваш остальной код (вкладки и контент) оставьте без изменений -->

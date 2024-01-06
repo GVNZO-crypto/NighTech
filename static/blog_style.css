@@ -1,0 +1,303 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TTMussels-Regular', sans-serif; /* Замените 'Your-Preferred-Font' на ваш выбор шрифта */
+    background-color: #f8f9fa; /* Цвет фона страницы */
+    color: #ffffff; /* Основной цвет текста */
+}
+
+/* Стили для навбара */
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(40, 40, 40, 0);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(40, 40, 40, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    background-color: #00000000;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #FF2A6D, 0 0 20px #FF2A6D, 0 0 30px #FF2A6D;
+}
+
+.navbar-toggler-icon,
+.navbar-toggler {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #66fcf1;
+}
+
+.nav-link.clicked {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link.clicked {
+    color: #66fcf1;
+}
+/* Стили для главного блока (Hero section) */
+.hero-section,
+.cards-section,
+.image-text-section {
+    color: #ffffff;
+}
+
+/* Стили для главного блока (Hero section) */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: left;
+    margin-left: 50px; /* Добавляем отступ слева */
+}
+
+.carousel-item img {
+    max-width: 2000px;
+    max-height: 900px;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+}
+#newsCarousel {
+    margin-top: -50px; /* Измените значение на ваше усмотрение, чтобы поднять или опустить карусель */
+}
+
+
+body {
+    background-image: url('media/1640234142_79-www-funnyart-club-p-foni-dlya-nikov-81.jpg'); /* Путь к вашей картинке */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate__animated {
+    animation-duration: 1s;
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+/* Стили для новостного отдела */
+.news-section {
+    padding: 80px 0;
+    background-color: #1a1a1a00; /* Глубокий темный цвет фона новостного отдела */
+}
+
+.custom-card {
+    margin-bottom: 20px;
+}
+
+.card,
+.wide-card {
+    margin-bottom: 100px; /* Добавляем одинаковый отступ между карточками */
+    overflow: hidden;
+    border: none;
+    border-radius: 15px;
+    background-color: #26262600; /* Темный цвет фона карточки */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+}
+
+.card:hover,
+.wide-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top {
+    max-width: 2000px;
+    max-height: 900px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.wide-img-container {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.wide-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 120px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff; /* Светлый цвет текста заголовка */
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #d8d8d8; /* Светлый серый цвет текста */
+    background-color: rgba(0, 0, 0, 0); /* Немного более светлый темный цвет фона текста */
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover .card-text,
+.wide-card:hover .card-text {
+    background-color: rgba(255, 255, 255, 0);
+}
+/* Усиление стилей для аккордеона */
+.accordion-flush {
+    background-color: transparent !important;
+}
+
+.accordion-item {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    color: #fff !important; /* Заменим на белый цвет текста */
+}
+
+.accordion-body {
+    position: relative; /* Устанавливаем относительное позиционирование для родительского контейнера */
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Прозрачный белый фон */
+    color: #00000000 !important; /* Цвет текста внутри аккордеона */
+    border: none !important;
+}
+
+/* Фиксированное изображение в аккордеоне */
+.accordion-body img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Чтобы избежать переполнения по ширине */
+    max-height: 80vh; /* Ограничение высоты для удобного просмотра на разных устройствах */
+}
+
+
+/* Дополнительные стили для текста в футере */
+footer {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 60px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer .col-sm-3 {
+    padding: 0 15px;
+}
+
+footer h5 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #007bff; /* Цвет заголовка */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    position: relative;
+}
+
+footer a:hover {
+    color: #005678;
+}
+
+footer a::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #45a23e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+footer a:hover::before {
+    width: 100%;
+}
+
+
+/* Анимация пульсации для социальных иконок */
+.soc-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    margin-right: 10px;
+    animation: pulse 2s infinite;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Анимация пульсации */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+@font-face {
+    font-family: 'TTMussels-Regular';
+    src: url("fonts/TTMussels-Regular.woff2") format('woff2');
+}

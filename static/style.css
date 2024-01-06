@@ -1,0 +1,373 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TTMussels-Regular', sans-serif; /* Замените 'Your-Preferred-Font' на ваш выбор шрифта */
+    background-color: #f8f9fa; /* Цвет фона страницы */
+    color: #ffffff; /* Основной цвет текста */
+}
+body {
+    background-image: url('media/5120x3200_leaves-line-neon-light-dark.jpg'); /* Замените 'путь_к_вашему_изображению.jpg' на путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Стили для навбара */
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(40, 40, 40, 0);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(40, 40, 40, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    background-color: #00000000;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    left: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #FF2A6D, 0 0 20px #FF2A6D, 0 0 30px #FF2A6D;
+}
+
+.navbar-toggler-icon,
+.navbar-toggler {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #66fcf1;
+}
+
+.nav-link.clicked {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link.clicked {
+    color: #66fcf1;
+}
+
+/* Стили для главного блока (Hero section) */
+.hero-section,
+/* Общие стили для карточек */
+.cards-section {
+    background-image: url("media/1320x1080_1558263_[www.ArtFile.ru].jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* При необходимости, можно изменить отступы */
+    text-align: center;
+    /* Другие стили для секции карточек */
+}
+.image-text-section {
+    background-image: url("media/6005641.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0; /* Регулируйте отступы по вашему усмотрению */
+    text-align: center;
+    color: #fff; /* Цвет текста внутри секции */
+}
+
+.hero-section {
+    background-image: url("media/background.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 100%;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Стили для текста внутри карточки */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.card:hover .card-text {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-primary {
+    background-color: #3438db;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #2380b3;
+}
+
+/* Стили для раздела с изображением и текстом (Image and Text section) */
+.image-text-section {
+    background-color: #1a1a1a;
+    padding: 100px 0;
+}
+
+.image-text-section img {
+    border-radius: 8px;
+}
+
+/* Дополнительные стили и адаптивность */
+@media (max-width: 368px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    .cards-section,
+    .image-text-section {
+        padding: 60px 0;
+    }
+    .hero-section .display-3 {
+        font-size: 2rem;
+    }
+    .hero-section .lead {
+        font-size: 1.2rem;
+    }
+}
+
+/* Стили для контейнера с текстом и рамкой */
+.container.mt-5.text-center.custom-border {
+    font-family: 'TTMussels-Regular', sans-serif;
+    text-align: start;
+    position: relative;
+    border: 2px solid #321450;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для текста внутри контейнера */
+.container.mt-5.text-center.custom-border h1 {
+    color: #ffffff;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 0 0 15px rgb(0, 47, 255);
+}
+
+/* Стили для h4 внутри контейнера */
+.container.mt-5.text-center.custom-border h4 {
+    color: #000000; /* Белый цвет текста */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff; /* Эффект неоновой подсветки */
+    /* Другие стили для h4, если необходимо */
+}
+
+/* Стили для подчеркивания текста при наведении */
+.container.mt-5.text-center.custom-border:hover::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #da0d0d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+    transform: scale(0, 1);
+    transition: height 0.3s ease-in-out;
+}
+
+
+/* Подключение шрифта */
+@font-face {
+    font-family: 'TTMussels-Regular';
+    src: url("fonts/TTMussels-Regular.woff2") format('woff2');
+}
+
+.container h1.display-3,
+.container p.lead {
+    font-family: 'TTMussels-Regular', sans-serif;
+    color: #ffffff;
+    text-align: start;
+}
+
+/* Стили для контактной информации и социальных сетей */
+.col-sm-3 {
+    position: relative;
+}
+
+/* Стили для неоновой рамки */
+.col-sm-3::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 2px solid #003062;
+    border-radius: 15px;
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(10, 156, 245, 0.8), 0 0 20px rgba(10, 156, 245, 0.4), 0 0 30px rgba(10, 156, 245, 0.2);
+}
+
+/* Анимация */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Основные стили иконок */
+.soc-icon::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: radial-gradient(circle, #fff, #fff 30%, transparent 50%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Добавление анимации при наведении на блоки */
+.hero-section,
+.cards-section,
+.image-text-section {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Применение анимации при наведении */
+.hero-section:hover,
+.cards-section:hover,
+.image-text-section:hover {
+    transform: scale(1.05);
+}
+
+/* Дополнительные стили для текста в футере */
+footer {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 60px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer .col-sm-3 {
+    padding: 0 15px;
+}
+
+footer h5 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #007bff; /* Цвет заголовка */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    position: relative;
+}
+
+footer a:hover {
+    color: #005678;
+}
+
+footer a::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #45a23e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+footer a:hover::before {
+    width: 100%;
+}
+
+
+/* Анимация пульсации для социальных иконок */
+.soc-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 3px;
+    margin-right: 10px;
+    animation: pulse 2s infinite;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* Анимация пульсации */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
