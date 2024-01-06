@@ -24,7 +24,7 @@ NighTech Club - это не просто веб-приложение. Это п�
 
 ### Футер (Footer)
 - **Свяжитесь с нами:** +996 778 88 69 99
-- **Следите за нами в соцсетях:** [Instagram](https://www.instagram.com/roberto_gunzo/), [Telegram]([#](https://t.me/gvnzo))
+- **Следите за нами в соцсетях:** [Instagram](https://www.instagram.com/roberto_gunzo/), [Telegram](https://t.me/gvnzo)
 
 ## Как внести свой вклад
 
