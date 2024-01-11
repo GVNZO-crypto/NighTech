@@ -1,14 +1,15 @@
 /* Общие стили */
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'TTMussels-Regular', sans-serif; /* Замените 'Your-Preferred-Font' на ваш выбор шрифта */
-    background-color: #f8f9fa; /* Цвет фона страницы */
-    color: #ffffff; /* Основной цвет текста */
+    font-family: 'TTMussels-Regular', sans-serif;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 body {
-    background-image: url('media/5120x3200_leaves-line-neon-light-dark.jpg'); /* Замените 'путь_к_вашему_изображению.jpg' на путь к вашему изображению */
+    background-image: url('media/5120x3200_leaves-line-neon-light-dark.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +162,12 @@ body {
 }
 
 /* Дополнительные стили и адаптивность */
-@media (max-width: 368px) {
+@media (max-width: 767px) {
+    .navbar-brand {
+        position: relative; /* Изменяем позицию в мобильной версии на относительную */
+        left: 120px; /* Убираем левый отступ */
+    }
+
     .hero-section {
         padding: 60px 0;
     }
@@ -175,6 +181,7 @@ body {
     .hero-section .lead {
         font-size: 1.2rem;
     }
+    
 }
 
 /* Стили для контейнера с текстом и рамкой */
@@ -288,86 +295,4 @@ body {
 .cards-section:hover,
 .image-text-section:hover {
     transform: scale(1.05);
-}
-
-/* Дополнительные стили для текста в футере */
-footer {
-    background-color: rgba(255, 255, 255, 0);
-    padding: 60px 0;
-    color: #ffffff;
-    text-align: center;
-}
-
-footer .col-sm-3 {
-    padding: 0 15px;
-}
-
-footer h5 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #007bff; /* Цвет заголовка */
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    font-weight: bold;
-    position: relative;
-}
-
-footer a:hover {
-    color: #005678;
-}
-
-footer a::before {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    background-color: #45a23e;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: width 0.3s ease-in-out;
-}
-
-footer a:hover::before {
-    width: 100%;
-}
-
-
-/* Анимация пульсации для социальных иконок */
-.soc-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0);
-    padding: 3px;
-    margin-right: 10px;
-    animation: pulse 2s infinite;
-    border-radius: 50%;
-    position: relative;
-}
-
-/* Анимация пульсации */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    }
-    50% {
-        transform: scale(1.2);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    }
 }

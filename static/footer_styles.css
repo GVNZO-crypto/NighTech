@@ -1,0 +1,51 @@
+/* Стили для футера */
+footer {
+    background-color: rgba(34, 34, 34, 0)fff;
+    padding: 45px 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer .col-sm-3 {
+    padding: 20px;
+}
+
+footer h5 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #f41b5a;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-weight: bold;
+    position: relative;
+}
+
+footer a:hover {
+    color: #bdff00
+}
+
+footer a::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #ff9760;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+footer a:hover::before {
+    width: 100%;
+}
+
+.foot_phone {
+    font-family: 'Genos', sans-serif;
+    font-size: 1.5rem;
+}
