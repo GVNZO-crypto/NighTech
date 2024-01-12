@@ -1,0 +1,61 @@
+{% load static %}
+<footer class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="footer-column">
+                    <h5>Свяжитесь с нами</h5>
+                    <p><strong>Телефон:</strong> +996 778 88 69 99</p>
+                </div>
+                <div class="footer-column">
+                    <h5>Мы в социальных сетях</h5>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/roberto_gunzo/" class="social instagram">
+                            <img src="{% static 'media/soc_inst.png' %}" alt="Instagram">
+                        </a>
+                        <a href="#" class="social whatsapp">
+                            <img src="{% static 'media/soc_whats.png' %}" alt="Whatsapp">
+                        </a>
+                        <a href="#" class="social telegram">
+                            <img src="{% static 'media/soc_teleg.png' %}" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-column">
+                    <h5>Информация</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="{% url 'about' %}">О нас</a></li>
+                        <li><a href="#">Информация о доставке</a></li>
+                        <li><a href="#">Политика безопасности</a></li>
+                        <li><a href="#">Условия соглашения</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-column">
+                    <h5>Дополнительно</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Производители</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-column">
+                    <h5>Ваш вечер</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Расписание вечеринок</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Партнеры</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>

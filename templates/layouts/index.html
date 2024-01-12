@@ -26,7 +26,6 @@
     <!-- Пользовательские стили -->
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'social_icons.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'footer_styles.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
 
@@ -51,6 +50,7 @@
             });
         });
     </script>
+    
 </head>
 
 <body>
@@ -131,57 +131,8 @@
             <h4>NighTech</h4>
         </div>
     </div>
-
-    <!-- Footer -->
-    <div class="container">
-        <footer class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="container2">
-                <div class="row">
-                    <!-- Колонка 1 - Контактная информация и социальные сети -->
-                    <div class="col-sm-3">
-                        <h5>Свяжитесь с нами</h5>
-                        <div class="foot_phone mb-3" style="">+996 778 88 69 99</div>
-                        <div class="foot_soc">
-                            <a href="https://www.instagram.com/roberto_gunzo/" class="soc-icon instagram"><img src="{% static 'media/soc_inst.png' %}" alt="Instagram"></a>
-                            <a href="#" class="soc-icon whatsapp"><img src="{% static 'media/soc_whats.png' %}" alt="Whatsapp"></a>
-                            <a href="#" class="soc-icon telegram"><img src="{% static 'media/soc_teleg.png' %}" alt="Telegram"></a>
-                        </div>
-                    </div>
-                    <!-- Колонка 2 - Информация -->
-                    <div class="col-sm-3">
-                        <h5>Информация</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Информация о доставке</a></li>
-                            <li><a href="#">Политика безопасности</a></li>
-                            <li><a href="#">Условия соглашения</a></li>
-                        </ul>
-                    </div>
-                    <!-- Колонка 3 - Дополнительно -->
-                    <div class="col-sm-3">
-                        <h5>Дополнительно</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Акции</a></li>
-                            <li><a href="#">Производители</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Карта сайта</a></li>
-                        </ul>
-                    </div>
-                    <!-- Колонка 4 - Разделы на ваш вкус -->
-                    <div class="col-sm-3">
-                        <h5>Ваш вечер</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Расписание вечеринок</a></li>
-                            <li><a href="#">Галерея</a></li>
-                            <li><a href="#">Партнеры</a></li>
-                            <li><a href="#">Блог</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
+        <!-- Include common footer -->
+        {% include 'layouts/footer.html' %}
     <!-- Ваши пользовательские скрипты -->
     <script src="{% static 'scripts.js' %}"></script>
 </body>

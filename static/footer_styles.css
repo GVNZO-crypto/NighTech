@@ -1,51 +1,91 @@
 /* Стили для футера */
+
+/* Оформление футера */
 footer {
-    background-color: rgba(34, 34, 34, 0)fff;
-    padding: 45px 0;
-    color: #fff;
-    text-align: center;
+    background-color: rgba(34, 34, 34, 0)fff; /* Фон футера с прозрачностью */
+    padding: 45px 0; /* Внутренний отступ футера сверху и снизу */
+    color: #fff; /* Цвет текста в футере */
+    text-align: center; /* Выравнивание текста по центру */
 }
 
+/* Стили для колонок внутри футера */
 footer .col-sm-3 {
-    padding: 20px;
+    padding: 20px; /* Внутренний отступ для колонок */
 }
 
+/* Стили для заголовков в футере */
 footer h5 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    color: #f41b5a;
+    font-size: 1.8em; /* Размер шрифта для заголовков */
+    margin-bottom: 20px; /* Внутренний отступ снизу для заголовков */
+    color: #f41b5a; /* Цвет заголовков */
 }
 
+/* Стили для ссылок в футере */
 footer a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-    font-weight: bold;
-    position: relative;
+    color: #ffffff; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    transition: color 0.3s ease-in-out; /* Плавное изменение цвета при наведении */
+    font-weight: bold; /* Жирный шрифт для ссылок */
+    position: relative; /* Позиционирование относительно родителя */
 }
 
+/* Стили для ссылок при наведении */
 footer a:hover {
-    color: #bdff00
+    color: #bdff00; /* Цвет текста при наведении */
 }
 
+/* Эффект до и после при наведении на ссылки */
 footer a::before {
-    content: "";
-    display: block;
-    height: 2px;
-    width: 0;
-    background-color: #ff9760;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: width 0.3s ease-in-out;
+    content: ""; /* Создание пустого элемента */
+    display: block; /* Блочный элемент */
+    height: 2px; /* Толщина линии */
+    width: 0; /* Начальная ширина линии */
+    background-color: #ff9760; /* Цвет линии */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    bottom: 0; /* Расстояние снизу */
+    left: 50%; /* Расположение линии по центру */
+    transform: translateX(-50%); /* Центрирование линии */
+    transition: width 0.3s ease-in-out; /* Плавное изменение ширины при наведении */
 }
 
+/* Изменение ширины линии при наведении */
 footer a:hover::before {
-    width: 100%;
+    width: 100%; /* Увеличение ширины линии при наведении */
 }
 
+/* Стили для номера телефона в футере */
 .foot_phone {
-    font-family: 'Genos', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Genos', sans-serif; /* Шрифт номера телефона */
+    font-size: 1.5rem; /* Размер шрифта номера телефона */
+}
+
+/* Стили для социальных иконок */
+.socials {
+    display: flex; /* Отображение иконок в ряд */
+    justify-content: center; /* Выравнивание иконок по центру горизонтально */
+    
+}
+.socials a {
+    text-decoration: none; /* Убираем подчеркивание у социальных ссылок */
+}
+/* Стили для каждой социальной иконки */
+.social {
+    display: inline-block; /* Отображение иконок в ряд */
+    margin: 0 10px; /* Расстояние между иконками */
+    text-decoration: none; /* Убираем подчеркивание у социальных ссылок */
+}
+
+/* Стили для изображений социальных иконок */
+.social img {
+    text-decoration: none; /* Убираем подчеркивание у изображений социальных иконок */
+    width: 32px; /* Размер иконок */
+    height: 32px;
+    border-radius: 50%; /* Скругление углов для круглых иконок */
+    transition: transform 0.3s ease-in-out; /* Плавный эффект при наведении */
+}
+
+/* Эффект при наведении на социальные иконки */
+.social:hover img {
+    transform: scale(1.2);
+     /* Увеличение размера иконки при наведении */
 }

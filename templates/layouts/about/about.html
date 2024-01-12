@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NighTech Club: О нас</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'about.css' %}">
+</head>
+
+<body>
+
+    <!-- Include common header -->
+    {% include 'layouts/header.html' %}
+
+    <div class="container mt-5">
+        <h1>NighTech Club: Открой дверь в мир Будущего! 🌌</h1>
+        <p>
+            Добро пожаловать в NighTech Club - место, где технологии сливаются с ночным развлечением, а будущее становится реальностью! 🚀
+        </p>
+
+        <h2>О проекте</h2>
+        <p>
+            NighTech Club - это не просто клуб; это погружение в мир инноваций, где каждый момент наполнен современными идеями и футуристическим дизайном.
+        </p>
+
+        <h3>💡 Ключевые особенности</h3>
+        <ul class="feature-list">
+            <li>Футуристичный дизайн: Иммерсивный, передовой и уникальный - каждый элемент дышит технологиями будущего.</li>
+            <li>Неоновая атмосфера: Сияющий неон окутывает каждый уголок, создавая уникальное визуальное восприятие.</li>
+            <li>Технологичные решения: Мы используем передовые технологии для создания неповторимого онлайн-опыта.</li>
+        </ul>
+
+        <p>
+            <a href="#" class="btn btn-about">Погрузиться в будущее</a>
+        </p>
+    </div>
+
+    <!-- Include common footer -->
+    {% include 'layouts/footer.html' %}
+
+    <!-- Bootstrap JS and other scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
